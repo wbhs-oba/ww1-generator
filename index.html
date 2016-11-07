@@ -32,6 +32,9 @@
 	<script src='http://cdnjs.cloudflare.com/ajax/libs/textAngular/1.5.0/textAngular.min.js'></script>
 	<link rel="stylesheet" href="css/textAngular.css" type="text/css">
 
+	<!-- Angularjs Storage -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.6/ngStorage.min.js"></script>
+
 	<!-- Custom Styles -->
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 
@@ -41,7 +44,7 @@
 <body>
 	<div class="container" ng-controller="peopleController">
 		<h1>WW1 Memorial Data Generator <button class="btn btn-success" ng-click="exportdata()" data-toggle="modal" data-target="#copypaste">Export</button></h1>
-		<div class="card card-block" ng-repeat="person in people">
+		<div class="card card-block" ng-repeat="person in $storage.people">
 			<h4 class="card-title"><p editable-text="person.name">{{person.name || "empty"}}</p></h4>
             <div class="card-text">
                 <div class="row">
