@@ -1,0 +1,13 @@
+html, body {
+	height: 100%;
+}
+body {
+	background-image: url("../img/dark_wall.png");
+}
+.container {
+	background-color: white;
+	padding: 20px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border-radius: 3px;
+}
